@@ -2638,40 +2638,62 @@
             </tr>
         </table>
         <br>
-        <table class="sheet-center" style="width:100%">
+        <table class="sheet-center sheet-attacks" style="width:100%">
             <tr>
                 <td>Roll</td>
                 <th>Attack</th>
                 <td>Attack Dice</td>
                 <td>Effect</td>
+                <td>Descriptors</td>
             </tr>
             <tr>
                 <td><button type='roll' name="attr_attack_1_roll" value='/me attacks with @{attack_1}! [[{@{attack_dice_1}}kh1]] to hit and [[{@{attack_effect_1}}kh1]] to damage' /></td>
                 <th><input type="text" name="attr_attack_1" value="" /></th>
                 <td><input type="text" name="attr_attack_dice_1" value="d0" /></td>
                 <td><input type="text" name="attr_attack_effect_1" value="d0" /></td>
+                <td><input type="text" name="attr_attack_descriptor_1" /></td>
             </tr>
             <tr>
                 <td><button type='roll' name="attr_attack_2_roll" value='/me attacks with @{attack_2}! [[{@{attack_dice_2}}kh1]] to hit and [[{@{attack_effect_2}}kh1]] to damage' /></td>
                 <th><input type="text" name="attr_attack_2" value="" /></th>
                 <td><input type="text" name="attr_attack_dice_2" value="d0" /></td>
                 <td><input type="text" name="attr_attack_effect_2" value="d0" /></td>
+                <td><input type="text" name="attr_attack_descriptor_2" /></td>
             </tr>
             <tr>
                 <td><button type='roll' name="attr_attack_3_roll" value='/me attacks with @{attack_3}! [[{@{attack_dice_3}}kh1]] to hit and [[{@{attack_effect_3}}kh1]] to damage' /></td>
                 <th><input type="text" name="attr_attack_3" value="" /></th>
                 <td><input type="text" name="attr_attack_dice_3" value="d0" /></td>
                 <td><input type="text" name="attr_attack_effect_3" value="d0" /></td>
+                <td><input type="text" name="attr_attack_descriptor_3" /></td>
             </tr>
             <tr>
                 <td><button type='roll' name="attr_attack_4_roll" value='/me attacks with @{attack_4}! [[{@{attack_dice_4}}kh1]] to hit and [[{@{attack_effect_4}}kh1]] to damage' /></td>
                 <th><input type="text" name="attr_attack_4" value="" /></th>
                 <td><input type="text" name="attr_attack_dice_4" value="d0" /></td>
                 <td><input type="text" name="attr_attack_effect_4" value="d0" /></td>
+                <td><input type="text" name="attr_attack_descriptor_4" /></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <fieldset class="repeating_attacks">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td><button type='roll' name="attr_attacks_roll" value='/me attacks with @{attacks_name}! [[{@{attacks_dice}}kh1]] to hit and [[{@{attacks_effect}}kh1]] to damage' /></td>
+                                <th><input type="text" name="attr_attacks_name" value="" /></th>
+                                <td><input type="text" name="attr_attacks_dice" value="d0" /></td>
+                                <td><input type="text" name="attr_attacks_effect" value="d0" /></td>
+                                <td><input type="text" name="attr_attacks_descriptor" /></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
             </tr>
             <tr>
                 <td><br></td>
             </tr>
+        </table>
+        <table class="sheet-center" style="width:100%">
             <tr>
                 <td>Roll</td>
                 <th>Defense</th>
@@ -2701,6 +2723,20 @@
                 <th><input type="text" name="attr_defense_4" value="" /></th>
                 <td><input type="text" name="attr_defense_dice_4" value="d0" /></td>
                 <td><input type="text" name="attr_defense_effect_4" value="d0" /></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <fieldset class="repeating_defenses">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td><button type='roll' name="attr_defenses_roll" value='/me defends with @{defenses_name}! [[{@{defenses_dice}}kh1]] to avoid and with an [[{@{defenses_effect}}kh1]] effect' /></td>
+                                <th><input type="text" name="attr_defenses_name" value="" /></th>
+                                <td><input type="text" name="attr_defenses_dice" value="d0" /></td>
+                                <td><input type="text" name="attr_defenses_effect" value="d0" /></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
             </tr>
             <tr>
                 <td><br></td>

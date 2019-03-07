@@ -295,6 +295,10 @@ h2 {
     vertical-align: middle;
 }
 
+.sheet-attacks input[type="text"] {
+    width: 156px;
+}
+
 /*-----textarea-----*/
 
 textarea {
@@ -476,6 +480,8 @@ input.sheet-roundcheck[type="checkbox"]:checked + span::before
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+    min-width: 22px;
 }
 
 .charsheet .sheet-wrapper button[type="roll"]:hover,
